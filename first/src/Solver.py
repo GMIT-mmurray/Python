@@ -1,20 +1,9 @@
-import math
-
-_author_ = 'wombat'
-
-class Solver:
-  def demo(self):
-      while True:
-          a = int(input("a "))
-          b = int(input("b "))
-          c = int(input("c "))
-          d = b ** 2 - 4 * a * c
-          if d>=0:
-              disc = math.sqrt(d)
-              root1 = (-b + disc) / (2 * a)
-              root2 = (-b - disc) / (2 * a)
-              print(root1, root2)
-          else:
-              print('error')
-
-Solver().demo()
+dict = {}
+dict['one'] = "This is one"
+dict[2] = "This is two"
+tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
+print (dict['one']) # Prints value for 'one' key
+print (dict[2] )# Prints value for 2 key
+print (tinydict) # Prints complete dictionary
+print (tinydict.keys()) # Prints all the keys
+print (tinydict.values()) # Prints all the values
